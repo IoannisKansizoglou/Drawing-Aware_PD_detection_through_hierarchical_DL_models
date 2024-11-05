@@ -43,11 +43,11 @@ The classification result of the latter ($n$) is used to retrieve the respective
   <img align="middle" src="images/Hierarchical Architecture.png" width="75%"/>
 </p>
 
-Overall, the main contributions of this work include:   
+The main contributions of this work include:   
 
-* the exploitation of a simpler yet more efficient CNN model, \textit{i.e.}, the ResNet-18 architecture~\cite{he2016deep}, benefiting detection performance compared against state-of-the-art methods;
+* the exploitation of a simpler yet more efficient CNN model, \textit{i.e.}, the ResNet-18 architecture, benefiting detection performance compared against state-of-the-art methods;
 * the adoption of a hierarchical PD detection scheme, which is divided into two distinctive tasks, \textit{i.e.}, recognition of the drawing test and, then, identification of the PD disease, leading to even more improved results;
-* the exploitation of a strict $5$-fold cross-validation scheme on the well-established NewHandPD database~\cite{pereira2016deep} for a more accurate and transparent assessment of single HW image PD detection;
+* the exploitation of a strict $5$-fold cross-validation scheme on the well-established NewHandPD database for a more accurate and transparent assessment of single HW image PD detection;
 * an open-source code for the research community.
 
 ### Results on NewHandPD dataset
