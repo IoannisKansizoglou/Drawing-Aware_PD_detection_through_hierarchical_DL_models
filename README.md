@@ -35,8 +35,134 @@ The main branch works with **PyTorch 1.8+**.
 
 ### Proposed Method
 
-
+The proposed architecture is based on hierarchical DL models exploiting the well-established [ResNet-18 architecture](https://arxiv.org/pdf/1512.03385).
+The input image after pre-processing ($\hat{I}$) is fed into the drawing recognition CNN model $\mathcal{F}_d$.
+The classification result of the latter ($n$) is used to retrieve the respective stored weights $\theta_n$ for the cascaded CNN model $\mathcal{F}_n$, which, in turn, produces the outcome for PD detection from $\hat{I}$.
 
 <p align="center">
   <img align="middle" src="images/Hierarchical Architecture.png" width="75%"/>
 </p>
+
+The proposed system is compared against state-of-the-art methods in the field of PD detection from hanrwriting images.
+
+#### Comparative accuracy results (%) of the drawing-aware PD detection models against single-image classifiers in ensemble learning tasks 
+
+<!-- Table 1 -->
+<table align="center">
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>Circle</th>
+      <th>Meander</th>
+      <th>Spiral</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Zham <em>et al.</em> [1]</td>
+      <td>-</td>
+      <td>94.70</td>
+      <td>92.70</td>
+    </tr>
+    <tr>
+      <td>Agrawal <em>et al.</em> [2]</td>
+      <td>85.48</td>
+      <td>94.90</td>
+      <td>96.10</td>
+    </tr>
+    <tr>
+      <td>Bennour <em>et al.</em> [3]</td>
+      <td>-</td>
+      <td>96.43</td>
+      <td>98.00</td>
+    </tr>
+    <tr>
+      <td><strong>Ours</strong></td>
+      <td><strong>93.68</strong></td>
+      <td><strong>96.72</strong></td>
+      <td><strong>97.98</strong></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+#### Comparative analysis of the proposed PD detection system against state-of-the-art single image PD detection models
+
+<!-- Table 2 -->
+<table align="center">
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>Model</th>
+      <th>Accuracy (%)</th>
+      <th>Recall</th>
+      <th>Precision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Khatamino <em>et al.</em> [4]</td>
+      <td>Custom CNN architecture</td>
+      <td>88.00</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Xu <em>et al.</em> [5]</td>
+      <td>Ensemble of Random Forest models</td>
+      <td>89.94</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parziale <em>et al.</em> [6]</td>
+      <td>Decision Tree, Random Forest and SVM</td>
+      <td>82.45</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Mohaghegh <em>et al.</em> [7]</td>
+      <td>Vision Transformer</td>
+      <td>92.37</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Gazda <em>et al.</em> [8]</td>
+      <td>Ensemble of multiple fine-tuned CNNs</td>
+      <td>95.34</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parisi <em>et al.</em> [9]</td>
+      <td>Quantum ReLU Activation</td>
+      <td>83.00</td>
+      <td>0.83</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Abdullah <em>et al.</em> [10]</td>
+      <td>Multiple CNNs with Feature Selection</td>
+      <td>95.29</td>
+      <td>0.86</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td><strong>Ours</strong></td>
+      <td><strong>End-to-end ResNet-18 classifier</strong></td>
+      <td><strong>96.13</strong></td>
+      <td><strong>0.97</strong></td>
+      <td><strong>0.95</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Ours</strong></td>
+      <td><strong>Hierarchical ResNet-18 models</strong></td>
+      <td><strong>96.97</strong></td>
+      <td><strong>0.99</strong></td>
+      <td><strong>0.95</strong></td>
+    </tr>
+  </tbody>
+</table>
+<br>
