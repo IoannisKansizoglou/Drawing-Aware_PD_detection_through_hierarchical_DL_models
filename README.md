@@ -43,7 +43,23 @@ The classification result of the latter ($n$) is used to retrieve the respective
   <img align="middle" src="images/Hierarchical Architecture.png" width="75%"/>
 </p>
 
-The proposed system is compared against state-of-the-art methods in the field of PD detection from hanrwriting images.
+Overall, the main contributions of this work include:   
+
+* the exploitation of a simpler yet more efficient CNN model, \textit{i.e.}, the ResNet-18 architecture~\cite{he2016deep}, benefiting detection performance compared against state-of-the-art methods;
+* the adoption of a hierarchical PD detection scheme, which is divided into two distinctive tasks, \textit{i.e.}, recognition of the drawing test and, then, identification of the PD disease, leading to even more improved results;
+* the exploitation of a strict $5$-fold cross-validation scheme on the well-established NewHandPD database~\cite{pereira2016deep} for a more accurate and transparent assessment of single HW image PD detection;
+* an open-source code for the research community.
+
+### Results on NewHandPD dataset
+
+#### Confusion matrices
+
+<p align="center">
+  <img align="middle" src="images/ConfusionMatrices.png" width="100%"/>
+</p>
+<br>
+
+The proposed system is compared against state-of-the-art methods in the field of PD detection from handwriting images.
 
 #### Comparative accuracy results (%) of the drawing-aware PD detection models against single-image classifiers in ensemble learning tasks 
 
