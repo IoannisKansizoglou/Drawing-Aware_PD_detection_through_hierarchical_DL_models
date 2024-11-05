@@ -1,1 +1,1 @@
-# Drawing-Aware_PD_detection_from_HW_images
+# Drawing-Aware PD detection through hierarchical DL models
