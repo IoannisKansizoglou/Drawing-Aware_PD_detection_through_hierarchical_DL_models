@@ -1,3 +1,15 @@
-# Drawing-Aware PD detection through hierarchical DL models
+# Drawing-Aware PD detection
 
-<img align="middle" src="images/Hierarchical Architecture.png" width="65%"/>
+### Introduction
+
+This repository contains an open-source toolbox for Parkinson's Disease (PD) detection from handwriting records based on PyTorch.
+
+The main branch works with **PyTorch 1.8+**.
+
+### What's New
+
+* Release [Drawing-Type Classifier]([url](https://duth-my.sharepoint.com/:f:/g/personal/ikansizo_duth_gr/EohrhPpey5ZPhvJEhRi4wggBQRegu0VzsakZZ-SRll6MFA?e=uKOR5N)), a ResNet-18 model for classifying 
+
+<p align="center">
+  <img align="middle" src="images/Hierarchical Architecture.png" width="75%"/>
+</p>
