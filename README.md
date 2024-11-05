@@ -8,7 +8,7 @@ The main branch works with **PyTorch 1.8+**.
 
 ### What's New
 
-* Release **Drawing-type classifier** (code and [weights](https://duth-my.sharepoint.com/:f:/g/personal/ikansizo_duth_gr/EohrhPpey5ZPhvJEhRi4wggBQRegu0VzsakZZ-SRll6MFA?e=uKOR5N)): a ResNet-18 model for classifying different drawing types (see drawing types below from the [NewHandPD](https://wwwp.fc.unesp.br/~papa/pub/datasets/Handpd/) database).
+* Release **Drawing-type classifier** ([code](https://github.com/IoannisKansizoglou/Drawing-Aware_PD_detection_through_hierarchical_DL_models/blob/main/codes/drawing-type%20classifier/train_model.py) and [weights](https://duth-my.sharepoint.com/:f:/g/personal/ikansizo_duth_gr/EohrhPpey5ZPhvJEhRi4wggBQRegu0VzsakZZ-SRll6MFA?e=uKOR5N)): a ResNet-18 model for classifying different drawing types (see drawing types below from the [NewHandPD](https://wwwp.fc.unesp.br/~papa/pub/datasets/Handpd/) database).
 
 <table align="center">
   <tr>
