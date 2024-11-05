@@ -182,3 +182,15 @@ The proposed system is compared against state-of-the-art methods in the field of
   </tbody>
 </table>
 <br>
+
+## Cite This Work
+
+If you find our work helpful in your research, please consider citing our paper:
+
+**BibTeX Citation:**
+```bibtex
+@article{kansizoglou2024drawing,
+  title={Drawing-aware Parkinson's disease detection through hierarchical deep learning models},
+  author={Kansizoglou, Ioannis and Tsintotas, Konstantinos and Bratanov, Daniel and Gasteratos, Antonios},
+  year={2024}
+}
